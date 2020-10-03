@@ -18,6 +18,31 @@
             -webkit-transform: scale(1.08);
             transform: scale(1.08);
         }
+
+        .text {
+            text-align: center;
+        }
+
+        .col-md1 {
+            margin-bottom: 24px;
+        }
+
+        .imagecard {
+            height: 240px;
+            width: 100%;
+        }
+
+        /* DESKTOP VERSION */
+        @media (min-width: 992px) {
+            .col-md {
+                margin-bottom: 0px;
+            }
+
+            .imagecard {
+                height: 500px;
+                width: 100%;
+            }
+        }
     </style>
 
 
@@ -149,9 +174,8 @@
                     <h2>Portfolio</h2>
                 </div>
             </div>
-
             <div class="row mb-4">
-                <div class="col-md">
+                <div class="col-md1 col-md">
                     <div class="card">
                         <img src="Cbenar.png" width="50px" height="240px" class="card-img-top" alt="Card image cap">
                         <div class="card-body">
@@ -164,7 +188,7 @@
 
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md1 col-md">
                     <div class="card">
                         <img src="Cbenar.png" width="50px" height="240px" class="card-img-top" alt="Card image cap">
                         <div class="card-body">
@@ -183,13 +207,13 @@
                             <p class="card-text text-center">Ini adalah portfolio circular double linked list yang saya
                                 buat menggunakan bahasa pemrograman C++</p>
                         </div>
-                        <a href="Klikhttps://github.com/rizkyfransisca/circularListC-" class="btn btn-primary">Klik
+                        <a href="https://github.com/rizkyfransisca/circularListC-" class="btn btn-primary">Klik
                             Disini</a>
                     </div>
                 </div>
             </div>
             <div class="row mb-4 justify-content-center">
-                <div class="col-md-5">
+                <div class="col-md1 col-md">
                     <div class="card">
                         <img src="GOLANG.png" width="50px" height="240px" class="card-img-top" alt="Card image cap">
                         <div class="card-body">
@@ -198,18 +222,27 @@
                                 menggunakan bahasa GO</p>
                         </div>
                         <a href="https://github.com/rizkyfransisca/AplikasiPawisata" class="btn btn-primary">
-                            Disini</a>
+                            Klik Disini</a>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-4 justify-content-center">
-                <div class="col-md-5">
+                <div class="col-md col-md1">
+                    <div class="card">
+                        <img src="Blockchain.png" width="50px" height="240px" class="card-img-top" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">Ini adalah WebAplikasi Blockchain yang saya buat
+                                menggunakan NodeJs , ExpressJs dan SocketIo (without database)
+                            </p>
+                        </div>
+                        <a href="https://github.com/rizkyfransisca/TugasBesarBlockchain" class="btn btn-primary">
+                            Klik Disini</a>
+                    </div>
+                </div>
+                <div class="col-md">
                     <div class="card">
                         <img src="education.png" width="50px" height="240px" class="card-img-top" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text text-center">Ini adalah project aplikasi android pertama yang saya buat,
-                                aplikasi ini adalah aplikasi belajar online, aplikasi ini belum memakai API dan
-                                Database.<br>Untuk mendownloadnya klik tombol dibawah ini
+                            <p class="card-text text-center">Ini adalah aplikasi belajar online (android) yang saya buat
+                                menggunakan bahasa pemrograman java (without database)
                             </p>
                         </div>
                         <a href="https://drive.google.com/file/d/1pRxLdNAwyk4J_GvP2q40uZwAgeDXcu_2/view?usp=drivesdk"
@@ -222,7 +255,7 @@
                 <div class="col-md">
                     <div class="card mb-3">
                         <a href=" https://rizkyfransisca.github.io/landingpage/."><img src="jumbotron-bg.jpg"
-                                height="500px" class="card-img-top btn btn-light" alt="..."></a>
+                                height="500px" class="card-img-top imagecard btn btn-light" alt="..."></a>
                         <div class="card-body">
                             <h5 class="card-title">MY LANDING PAGE WEBSITE PROJECT</h5>
                             <p class="card-text">Ini adalah Project Landing page Website yang saya buat menggunakan CSS
@@ -303,9 +336,11 @@
             </div>
     </section>
     <footer class="bg-dark text-white">
-        <div class="row pt-3">
-            <div class="col text-center">
-                <p>Copyright 2020.</p>
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col text-center">
+                    <p>Copyright 2020.</p>
+                </div>
             </div>
         </div>
     </footer>
@@ -333,8 +368,17 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 70
+                }, 950, function () {});
+                event.preventDefault();
+            } // End if
+        });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
