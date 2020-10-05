@@ -8,10 +8,15 @@
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--My CSS-->
     <style>
         section {
             min-height: 420px;
+        }
+
+        .fa {
+            margin-left: 5px;
         }
 
         .imagejumbo a::after {
@@ -43,6 +48,12 @@
                 width: 100%;
             }
         }
+
+        @media screen and (max-width: 768px) {
+            .myskill {
+                margin-top: 15px;
+            }
+        }
     </style>
 
 
@@ -52,7 +63,7 @@
 <body class="mt-5">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Rizky Fransisca</a>
+            <a class="navbar-brand" href="index.html">Rizky Fransisca</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -74,13 +85,16 @@
             <img src="RIKY.png" width="25%" height="25%" class="rounded-circle img-thumbnail">
             <h1 class="display-4 ">Rizky Fransisca</h1>
             <p class="lead">Selamat Datang di Portfolio Saya</p>
+
+            <a href="https://docs.google.com/uc?export=download&id=1GVt_Nvirf6jN-bxZBfUVbgC6sydJskR-"
+                class="btn btn-primary tombol">Download CV<i class="fa fa-download fa-fw" aria-hidden="true"></i> </a>
         </div>
     </div>
     <section id="about" class="about">
 
 
         <div class="container">
-            <div class="row mb-4">
+            <div class="row mb-3">
                 <div class="col text-center">
                     <h2>About</h2>
                 </div>
@@ -89,14 +103,15 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-10 text-center">
-                    <p>Nama saya Kadek Rizky Fransisca Putra, Umur 18 Tahun , Agama hindu, saya lulusan dari SMA Negeri
+                    <!-- <p>Nama saya Kadek Rizky Fransisca Putra, Umur 18 Tahun , Agama hindu, saya lulusan dari SMA Negeri
                         1 Mengwi,
                         sekarang saya menempuh pendidikan di S1 Informatika Telkom University.
                         Saya mulai menyukai dunia IT sejak SMA bahasa pemrograman yang pertama saya pelajari adalah HTML
                         & CSS,
                         Mulai saat itu saya mulai menekuni nya dan mengikuti beberapa perlombaan web design,
                         sekarang saya berstatus sebagai Mahasiswa Informatika Telkom University
-                        dan ingin mempelajari lebih banyak tentang pemrograman </p>
+                        dan ingin mempelajari lebih banyak tentang pemrograman </p> -->
+                    <p>"Saya merupakan seseorang yang sangat tertarik dengan algoritma dan struktur data, karena bagi saya mempelajari algoritma dan struktur data merupakan sebuah fundamental bagi seorang programmer. Selain kedua hal tersebut saya juga memiliki ketertarikan pada dunia website development, android development dan blockchain development. Oleh karena itu saya selalu mengasah kemampuan yang saya miliki saat ini, hingga akhirnya saya dapat mengimplementasikan kemampuan yang saya miliki ke suatu hal yang berguna bagi lingkungan sekitar."</p>
 
                 </div>
             </div>
@@ -108,13 +123,13 @@
                         <li class="list-group-item"><b>Jenis Kelamin:</b> Laki-laki</li>
                         <li class="list-group-item"><b>Agama:</b> Hindu</li>
                         <li class="list-group-item"><b>Status:</b> Belum Kawin</li>
-                        <li class="list-group-item"><b>Alamat:</b> Asrama Telkom University, Gedung 1 kamar 118, Jalan
-                            Telekomunikasi Terusan Buah Batur, Dayeuh kolot</li>
+                        <li class="list-group-item"><b>Alamat:</b> Perumahan Sambadha Asri B28, Banjar Cemenggon,
+                            Penarungan, Mengwi, Badung, Bali</li>
                         <li class="list-group-item"><b>No Telepon:</b> 081938713808</li>
                     </ul>
                 </div>
-                <div class="col-md-5">
-                    <h4>Bahasa Pemrograman yang saya kuasai: </h4>
+                <div class="col-md-5 myskill">
+                    <h4>Keahlian Profesional: </h4>
                     <p class="mt-2">Java</p>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 64%" 45" aria-valuemin="0"
@@ -135,14 +150,14 @@
                         <div class="progress-bar" role="progressbar" style="width: 59%" aria-valuenow="59"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <p class="mt-2">CSS</p>
+                    <p class="mt-2">CSS 3</p>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 54%" aria-valuenow="54"
+                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="54"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <p class="mt-2">XML</p>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 62%" aria-valuenow="54"
+                        <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="54"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <p class="mt-2">Python</p>
@@ -152,12 +167,12 @@
                     </div>
                     <p class="mt-2">PHP</p>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 56%" aria-valuenow="54"
+                        <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="54"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <p class="mt-2">JavaScript</p>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 47%" aria-valuenow="54"
+                        <div class="progress-bar" role="progressbar" style="width: 54%" aria-valuenow="54"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
@@ -318,7 +333,7 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="Masukkan Email anda...">
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan Email anda...">
                         </div>
                         <div class="form-group">
                             <label for="telp">No Telp</label>
